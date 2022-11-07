@@ -34,6 +34,14 @@ export default HomePage;
 // }
 
 const StyledHeader = styled.div`
+  .banner {
+    margin-top: 50px;
+    width: 100%;
+    height: 230px;
+    border-radius: 0;
+    object-fit: cover;
+  }
+
   img {
     width: 80px;
     height: 80px;
@@ -45,13 +53,13 @@ const StyledHeader = styled.div`
     width: 100%;
     padding: 16px 32px;
     gap: 16px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
 `;
 function Header() {
   return (
     <StyledHeader>
-      {/* <img src="" /> */}
+      <img className="banner" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
       <section className="user-info">
         <img src={`https://github.com/${config.github}.png`} />
         <div>
